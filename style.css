@@ -419,14 +419,15 @@ footer {
   width: 80%;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 10px;
 }
 #about img{
   height: 442px;
 }
 .icone{
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -586,4 +587,5 @@ nav {
     display: block;
   }
 }
+
 
