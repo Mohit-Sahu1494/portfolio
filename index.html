@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+  <header>
+  <h1>Portfolio</h1>
+  
+  <nav id="navbar">
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <button class="toggle-btn" onclick="toggleTheme()">🌙</button>
+  </nav>
+
+  <!-- Hamburger Icon -->
+  <div class="menu-toggle" id="menu-toggle">
+    ☰
+  </div>
+</header>
+
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Hello, I'm Mohit Sahu</h2>
+      <p>A Student of Bachelor of Computer Science.  Web Developer creating modern and responsive websites.</p>
+       <div class="icone_box">
+        <div class="icone">
+          <a href="https://www.linkedin.com/in/mohit-sahu-47a328354/"><i class="ri-linkedin-fill"></i></a></div>
+        <div class="icone"><i class="ri-twitter-line"></i></div>
+        <div class="icone"><a href="https://github.com/Mohit-Sahu1494"><i class="ri-github-fill"></i></a></div>
+        <div class="icone"><a href="https://www.instagram.com/itz_mohit_sahu_2.3/"><i class="ri-instagram-line"></i></a></div>
+      </div>
+      <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire Me</button>
+      <!-- Download Resume Button -->
+      <a href="resume.pdf" download>
+        <button>Download Resume</button>
+      </a>
+     
+    </div>
+    <img src="AI-generated-cartoon-2-removebg-preview.png" alt="Profile Picture">
+  </section>
+
+  <!-- About -->
+    <section id="about" class="about reveal">
+    <h2>About Me</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start; justify-content: center;">
+      <!-- Profile Photo -->
+      <img src="AI-generated-cartoon-2-removebg-preview.png" alt="Mohit Sahu" style="border-radius: 50%; box-shadow: 0 4px 16px rgba(0,0,0,0.12); margin-bottom: 18px;">
+      <div style="max-width: 600px;">
+        <p>
+          Hi, I’m <strong><em>Mohit Sahu</em></strong>, a passionate web developer and tech enthusiast. Currently, I’m pursuing my Bachelor of Computer Science. I love creating responsive and user-friendly websites using HTML, CSS, JavaScript, and PHP.
+        </p>
+        <!-- Education -->
+        <h3 style="margin-top:18px; color:var(--primary);">Education</h3>
+        <ul>
+          <li><strong>Bachelor of Computer Science</strong> – Dr. Hari Singh Gour University (2025-2027)</li>
+          <li><strong>Higher Secondary</strong> – Govt. Heigher Sec. School (2022-2024)</li>
+        </ul>
+        <!-- Achievements -->
+        <h3 style="margin-top:18px; color:var(--primary);">Achievements & Certifications</h3>
+        <ul>
+          <li>Certified in Web Development (Code Alpha)</li>
+        </ul>
+        <!-- Languages -->
+        <h3 style="margin-top:18px; color:var(--primary);">Languages Known</h3>
+        <ul>
+          <li>English</li>
+          <li>Hindi</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="skills reveal">
+    <h2>Skills</h2>
+    <div class="skills-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 32px;">
+      <!-- Skill Card Example -->
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="skill-icon">
+        <h3>HTML5</h3>
+        <p>Semantic, SEO-friendly markup and modern HTML features.</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="skill-icon">
+        <h3>CSS3</h3>
+        <p>Responsive layouts, Flexbox, Grid, animations, and preprocessors.</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-icon">
+        <h3>JavaScript</h3>
+        <p>ES6+, DOM manipulation, API integration, and frameworks.</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="skill-icon">
+        <h3>React</h3>
+        <p>Component-based architecture, hooks, and state management.</p>
+      </div>
+       <div class="skill-card">
+        <img src="php.webp" alt="HTML" class="skill-icon">
+        <h3>PHP</h3>
+        <p>PHP is a server-side language that powers dynamic websites by handling forms and backend logic.</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="skill-icon">
+        <h3>Node.js</h3>
+        <p>REST APIs, Express.js, and backend development.</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" class="skill-icon">
+        <h3>SQL</h3>
+        <p>Database design, queries, and data management.</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="skill-icon">
+        <h3>Bootstrap</h3>
+        <p>Rapid UI development with responsive components.</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="skill-icon">
+        <h3>Git</h3>
+        <p>Version control, collaboration, and workflow management.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects reveal">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio website built using HTML, CSS, and JavaScript.</p>
+        <div class="project-links">
+          <a href="#">Live Demo</a>
+          <a href="#">Source Code</a>
+        </div>
+      </div>
+      <div class="project">
+        <h3>Basic Calculator</h3>
+        <p>A simple Calculator for too solve the basic math calculation.</p>
+        <div class="project-links">
+          <a href="https://mohit-sahu1494.github.io/caluclator/">Live Demo</a>
+          <a href="https://github.com/Mohit-Sahu1494/caluclator">Source Code</a>
+        </div>
+      </div>
+      <div class="project">
+        <h3>To Do list App</h3>
+        <p>A To-Do List App is a digital notebook where users can add, edit, complete, and delete their daily tasks.</p>
+        <div class="project-links">
+          <a href="#">Live Demo</a>
+          <a href="#">Source Code</a>
+        </div>
+      </div>
+      <div class="project">
+        <h3>Library Management System</h3>
+        <p>A Library Management System is a digital solution to organize, track, and manage books and users efficiently.</p>
+        <div class="project-links">
+          <a href="#">Live Demo</a>
+          <a href="#">Source Code</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials reveal">
+    <h2>Our Services</h2>
+    <div class="testimonials-container">
+      <div class="testimonial">
+        <strong style="font-size: 2em;"><i class="ri-brush-line"></i></strong>
+        <strong>Web Design</strong>
+        <p>"Web design is about creating visually appealing and easy-to-use websites that provide a great user experience. 🎨"</p>
+        
+      </div>
+      <div class="testimonial">
+        <strong style="font-size: 2em;"><i class="ri-code-s-slash-line"></i></strong>
+        <strong>Web Development</strong>
+         <p>"Web development is about building responsive, functional, and user-friendly websites for the digital world."</p>
+      </div>
+      <div class="testimonial">
+         <strong style="font-size: 2em;"><i class="ri-macbook-line"></i></strong>
+         <strong>Responsive Website</strong>
+        <p>"Responsive websites adapt to all screen sizes, providing a seamless and user-friendly experience everywhere. 📱💻"</p>
+       
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact reveal">
+  <h2>Contact Me</h2>
+  <form onsubmit="sendMessage(event)">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit" onclick="sendMessage(event)">Send Mail</button>
+  </form>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Mohit Sahu | All Rights Reserved</p>
+    <div class="footer-social">
+      <a href="https://github.com/Mohit-Sahu1494" target="_blank">GitHub</a>
+     <a href="https://www.linkedin.com/in/mohit-sahu-47a328354" target="_blank">LinkedIn</a>
+      <a href="https://www.instagram.com/itz_mohit_sahu_2.3/" target="_blank">Instagram</a>
+      <a href="mailto:sahumohit1494@gmail.com" target="_blank">Email</a>
+       <a href="#" target="_blank">Phone :-<span>9039149403</span></a>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" title="Go to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
